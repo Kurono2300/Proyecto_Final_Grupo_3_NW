@@ -9,5 +9,5 @@ require_once 'libs/database.php';
 
 $app = new App();
 
-//COMENTARIO RANDOMs
+
 ?>
