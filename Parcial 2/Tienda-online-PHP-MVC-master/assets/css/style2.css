@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box ;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    /*PRUEBAS*/
+    background: #031417;
+    background-color: #062e32;
+}
+.decoration{
+    text-decoration: none !important;
+}
+.hover:hover{
+    background: #E9E8EA;
+    transition: .5s;
+}
+aside{
+    height: auto;
+}
+.title{
+    text-decoration: none;
+    font-size: 36px;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0px 2px 4px aqua;
+    transition: all .4s;
+    line-height: 100px;
+
+}
+.title:hover{
+    text-decoration: none;
+    color: #222;
+    text-shadow: 0px 2px 4px aqua, 0px 0px 4px aqua ;
+}
+
+#response {
+    display:none;
+    color: #255625;
+    padding: 10 20px;
+    background: #c0efc0;
+    border: #aadeab 1px solid;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
