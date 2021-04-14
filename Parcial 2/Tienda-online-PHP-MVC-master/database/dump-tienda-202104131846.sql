@@ -1,8 +1,12 @@
 -- MySQL dump 10.13  Distrib 8.0.19, for Win64 (x86_64)
 --
 -- Host: localhost    Database: tienda
+
+-- IMPORTANTE LEER!
+
 -- De preferencia usar el script database - copia V2.0.sql
 -- Ese fue el script creado previo al ingreso de datos a la BD, por lo tanto no habra conflictos con las relaciones.
+
 -- ------------------------------------------------------
 -- Server version	8.0.19
 
