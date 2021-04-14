@@ -1,4 +1,4 @@
-<h3 class="w-100">Gestionar categorias</h3>
+<h3 class="w-100">Gestion de Categorias</h3>
 <div class="w-100">
     <a href="<?= base_url ?>Categorias/crear" class="btn btn-success w-25">Crear categoria</a>
 </div>

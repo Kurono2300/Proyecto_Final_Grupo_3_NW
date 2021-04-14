@@ -39,7 +39,7 @@
 
     <table class="table">
         <tr class="table-header">
-            <th>imagen</th>
+            <th>Imagen</th>
             <th>Nombre</th>
             <th>Precio</th>
             <th>Unidades</th>
@@ -49,7 +49,7 @@
                 <?php if ($productoPedido->imagen != NULL): ?>
                     <td><img  src="<?= base_url ?>uploads/images/<?= $productoPedido->imagen ?>" width="80" alt=""></td>
                 <?php else: ?>
-                    <td><img class="" width="80" src="<?= base_url ?>assets/img/camiseta.png" /></td>
+                    <td><img class="" width="80" src="<?= base_url ?>assets/img/logosmashito.png" /></td>
                 <?php endif; ?>
         <!--        <td><img src="<?= base_url ?>uploads/images/<?= $productoPedido->imagen ?>" alt="" width="80"</td>-->
                 <td> <a href="<?= base_url ?>Productos/ver&id=<?= $productoPedido->id ?>"> <?= $productoPedido->nombre ?></a></td>
@@ -60,7 +60,7 @@
     </table>
 
 <?php elseif (isset($_SESSION['pedido']) && $_SESSION['pedido'] == 'failet'): ?>
-    <h3 class="w-100">su pedido No puede ser realizado</h3>
+    <h3 class="w-100">Su pedido no puede ser realizado</h3>
     <p> Por favor revise sus datos para verificar posibles errores!! </p>
 
 <?php endif; ?>

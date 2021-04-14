@@ -20,7 +20,7 @@ class ProductosController {
 
         require_once 'views/productos/crear.php';
     }
-   public function ver() {
+    public function ver() {
         if (isset($_GET['id'])) {
             $id = $_GET['id'];
             $producto = new ProductosModels();

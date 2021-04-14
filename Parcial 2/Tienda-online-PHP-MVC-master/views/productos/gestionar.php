@@ -1,4 +1,4 @@
-<h1 class="w-100 mb-4">Gestionar productos3</h1>
+<h1 class="w-100 mb-4">Gestion de Productos</h1>
 <div class="w-100">
     <a href="<?= base_url ?>Productos/crear" class="btn btn-success w-25">Crear Producto</a>
 </div>
@@ -27,7 +27,7 @@
 <div class="w-100 d-flex justify-content-center ">
     <table class="table mt-3 w-75 border">
         <tr>
-            <th>id</th>
+            <th>ID</th>
             <th>Nombre</th>
             <th>Precio</th>
             <th>Stock</th>

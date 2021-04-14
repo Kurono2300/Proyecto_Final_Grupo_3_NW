@@ -4,7 +4,7 @@
             <img  src="<?= base_url ?>uploads/images/<?= $produc->imagen ?>" class="w-100" alt="">
         </div>
     <?php else: ?>
-        <img class="" width="450" src="<?= base_url ?>assets/img/camiseta.png" />
+        <img class="" width="450" src="<?= base_url ?>assets/img/logosmashito.png" />
     <?php endif; ?>
     <div class="col-6   ">
         <div class="row">

@@ -75,7 +75,7 @@ class UsuariosController {
             } else {
                 $_SESSION['error_login'] = 'identificacion fallida';
                 Utils::ShowError('error_login');
-                die(header('refresh: 2;' .'url='.base_url) . 'Sera redireccionado a la pagina principal automaticamente, si no, haga clic<a href='.base_url.'>AQUI</a>para ir a la pagina de inicio.');
+                die(header('refresh: 3;' .'url='.base_url) . 'Sera redireccionado a la pagina principal automaticamente, si no, haga clic<a href='.base_url.'>AQUI</a>para ir a la pagina de inicio.');
             }
         }
         header("location: " . base_url);

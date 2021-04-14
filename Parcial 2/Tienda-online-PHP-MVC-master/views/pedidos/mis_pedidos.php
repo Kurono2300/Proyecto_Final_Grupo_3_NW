@@ -1,5 +1,5 @@
 <?php if (isset($_SESSION['admin'])): ?>
-    <h3 class="w-100">Gestionar pedidos</h3>
+    <h3 class="w-100">Gestion de Pedidos</h3>
 <?php else: ?>
     <h3 class="w-100">Mis pedidos</h3>
 <?php endif; ?>

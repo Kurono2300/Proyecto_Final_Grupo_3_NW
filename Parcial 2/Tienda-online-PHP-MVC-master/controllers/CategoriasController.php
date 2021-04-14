@@ -19,7 +19,7 @@ class CategoriasController {
 //        var_dump($crear->save());die();
 header("location: " . base_url . "Categorias/index");
     }
-     public function ver() {
+    public function ver() {
         if(isset($_GET['id'])){
             //consigueindo categoria
             $id = $_GET['id'];
@@ -29,8 +29,7 @@ header("location: " . base_url . "Categorias/index");
             //consiguiendo productos
             $productos = new ProductosModels();
             $productos->setCategoria_id($id);
-            $productos = $productos->getAllCategory();
-           
+            $productos = $productos->getAllCategory();       
         }
         require_once 'views/categorias/ver.php';
     }

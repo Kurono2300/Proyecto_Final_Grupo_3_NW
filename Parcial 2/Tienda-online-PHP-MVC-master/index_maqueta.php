@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>Tienda</title>
+        <title>Tienda "Nombre Futuro"</title>
         <link rel="stylesheet" href="assets/css/style2.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
@@ -10,8 +10,8 @@
         <div class="container">
             <header>
                 <!-- <div class="bg-light p-3">
-                    <a href="#"><img src="assets/img/camiseta.png" alt="" width="120"></a>
-                    <a href="#" class="title ml-4 mt-1 ">Tienda Textil Store</a>
+                    <a href="#"><img src="assets/img/logosmashito.png" alt="" width="120"></a>
+                    <a href="#" class="title ml-4 mt-1 ">Tienda Textil "Nombre Futuro?"</a>
                 </div> -->
                 <nav class="navbar navbar-expand-sm bg-light navbar-light border-top">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">

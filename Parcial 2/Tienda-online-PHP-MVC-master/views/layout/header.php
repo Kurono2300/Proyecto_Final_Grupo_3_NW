@@ -31,6 +31,7 @@
                             <?php endwhile; ?>
                             <!-- <li class="nav-item">
                                 <a class="nav-link" href="<?= base_url ?>usuarios/registrar">Sobre Nosotros </a>
+                                Esta idea quedo sin desarrollarse por falta de tiempo e ideas.
                             </li>  -->
                         </ul>
                     </div>

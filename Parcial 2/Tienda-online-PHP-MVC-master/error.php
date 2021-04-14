@@ -7,8 +7,8 @@
     <title>Mamazon: Textiles Online</title>
 </head>
 <body>
-    <h1>Error Fatal mi Ing</h1>
-    <h2>Contacte al grupo que hizo este proyecto</h2>
+    <h1>Error Fatal Ing</h1>
+    <h2>Contacte al grupo que hizo este proyecto para verificar este error</h2>
     <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/05/08/09/pepe.jpg?width=982&height=726&auto=webp&quality=75" alt="">
 </body>
 </html>

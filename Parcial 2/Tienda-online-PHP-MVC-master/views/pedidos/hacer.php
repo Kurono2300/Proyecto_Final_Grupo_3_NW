@@ -1,7 +1,7 @@
 <?php if (isset($_SESSION['identity'])): ?>
     <?php if (isset($_SESSION['carrito'])): ?>
 
-        <h3 class="w-100"> Finalizar pedido</h3>
+        <h3 class="w-100">Finalizar pedido</h3>
         <?php echo isset($_SESSION['errores']) ? Utils::ShowError('general') : '' ?>
         <form action="<?= base_url ?>Pedidos/save" method="post" class="d-flex justify-content-around flex-wrap text-left mt-5">
             <div class="form-group mx-2 col-5">
@@ -31,7 +31,7 @@
         <p class="w-100">Ve al inicio de la pagina y agrega algun producto al carrito <a href="<?= base_url ?>">Aqui</a></p>
     <?php endif; ?>
 <?php else: ?>
-    <h3 class="w-100"> Debes registrarte para finalizar pedido</h3>
-    <p class="w-100">Regitrate y termnina tu pedido </p>
+    <h3 class="w-100">¡Registro Necesario!</h3>
+    <p class="w-100">¡Debes registrarte para poder terminar y procesar tu pedido! </p>
     <p class="w-100">Registrate <a href="<?= base_url ?>Usuarios/registrar">Aqui</a></p>
 <?php endif; ?>

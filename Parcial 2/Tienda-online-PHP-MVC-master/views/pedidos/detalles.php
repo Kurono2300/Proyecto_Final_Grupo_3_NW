@@ -30,7 +30,7 @@
 
 <table class="table">
     <tr class="table-header">
-        <th>imagen</th>
+        <th>Imagen</th>
         <th>Nombre</th>
         <th>Precio</th>
         <th>Unidades</th>
@@ -41,7 +41,7 @@
             <?php if ($productosPedido->imagen != NULL): ?>
                 <td><img  src="<?= base_url ?>uploads/images/<?= $productosPedido->imagen ?>" width="80" alt=""></td>
             <?php else: ?>
-                <td><img class="" width="80" src="<?= base_url ?>assets/img/camiseta.png" /></td>
+                <td><img class="" width="80" src="<?= base_url ?>assets/img/logosmashito.png" /></td>
             <?php endif; ?>
     <!--        <td><img src="<?= base_url ?>uploads/images/<?= $productosPedido->imagen ?>" alt="" width="80"</td>-->
             <td> <a href="<?= base_url ?>Productos/ver&id=<?= $productosPedido->id ?>"> <?= $productosPedido->nombre ?></a></td>

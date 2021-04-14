@@ -24,8 +24,7 @@ class Usuario {
         return $this->email;
     }
     function getPassword() {
-        //return $this->password = password_hash($this->db->real_escape_string($this->password), PASSWORD_BCRYPT, ['cost' => 4]); //OG
-        
+        //return $this->password = password_hash($this->db->real_escape_string($this->password), PASSWORD_BCRYPT, ['cost' => 4]); // Intento Original, Problemas de verificacion    
         return $this->password;
     }
     function getRol() {
@@ -47,11 +46,9 @@ class Usuario {
         $this->email = $this->db->real_escape_string($email);
     }
     function setPassword($password) {
-        //$this->password; //OG
+        //$this->password; // OG
         //var_dump($password);
-
         $salt = hash_hmac("sha256",$password,'a070e152-868d-11eb-8dcd-0242ac130003');
-        
         //var_dump($salt);
         $this->password = $salt;
     }
@@ -82,10 +79,8 @@ class Usuario {
             //var_dump($this->password);
             //var_dump($usuario->password);
             //var_dump(password_verify($password, $usuario->password)); die();
-
-            //$verify = password_verify($password, $usuario->password);
+            //$verify = password_verify($password, $usuario->password); //Verificacion Antigua, problemas con esto
             $verify = ($password == $usuario->password) ? True : false;
-            
             //var_dump($verify); die();
             if($verify){
                 $result = $usuario;

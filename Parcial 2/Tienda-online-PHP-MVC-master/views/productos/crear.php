@@ -2,7 +2,7 @@
     <h3 class="w-100 mb-3">Editar producto <?= $pro->nombre ?></h3>
     <?php $url_action = base_url . 'Productos/save&id=' . $pro->id ?>
 <?php else: ?>
-    <h3 class="w-100 mb-3">Agregar nuevo producto</h3>
+    <h3 class="w-100 mb-3">Agregar Nuevo Producto</h3>
     <?php $url_action = base_url . 'Productos/save' ?>
 <?php endif; ?>
 <form action="<?= $url_action ?>" enctype="multipart/form-data" method="post" class="row d-flex justify-content-around">
@@ -11,7 +11,7 @@
         <input type="text" name="nombre" value="<?= isset($pro) && is_object($pro) ? $pro->nombre : '' ?>" placeholder="Ingrese nombre" required class="form-control ">
     </div>
     <div class="form-group col-6">
-        <label for="categoria" class="w-100">Selecione categoria</label>
+        <label for="categoria" class="w-100">Selecione la Categoria</label>
         <select name="categoria" class="form-control ">
             <?php $categoriaSelect = Utils::showCategorias() ?>
             <?php while ($cat = $categoriaSelect->fetch_object()): ?>
@@ -29,13 +29,14 @@
         <input type="number" value="<?= isset($pro) && is_object($pro) ? $pro->precio : '' ?>" name="precio" step="0.01" placeholder="Ingrese precio" required class="form-control ">
     </div>
     <div class="form-group col-6">
-        <label for="stock" class="w-100">Cantidad</label>
+        <label for="stock" class="w-100">Cantidad en Inventario</label>
         <input type="number" value="<?= isset($pro) && is_object($pro) ? $pro->stock : '' ?>" name="cantidad" placeholder="Ingrese cantidad" required class="form-control ">
     </div>
-    <div class="form-group col-6">
+    <!-- <div class="form-group col-6">
         <label for="oferta" class="w-100">Oferta</label>
         <input type="text" value="<?= isset($pro) && is_object($pro) ? $pro->oferta : '' ?>" name="oferta"  class="form-control ">
-    </div>
+        Idea de Ofertas que no fue totalmente desarrollada por falta de tiempo.
+    </div> -->
     <?php if (isset($pro) && is_object($pro) && !empty($pro->imagen)): ?>
         <div class="w-100">
             <img src="<?= base_url ?>uploads/images/<?= $pro->imagen ?>" alt="" width="100">

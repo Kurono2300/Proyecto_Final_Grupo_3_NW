@@ -1,4 +1,4 @@
-<h3 class="w-100">Carrito</h3>
+<h3 class="w-100">Mi Carrito de Compras</h3>
 <?php if (isset($_SESSION['carrito']) && count($_SESSION['carrito']) >= 1): ?>
     <table class="table">
         <tr class="table-header">
@@ -17,7 +17,7 @@
                 <?php if ($producto->imagen != NULL): ?>
                     <td><img  src="<?= base_url ?>uploads/images/<?= $producto->imagen ?>" width="80" alt=""></td>
                 <?php else: ?>
-                    <td><img class="" width="80" src="<?= base_url ?>assets/img/logosmashito.png" /></td> <!--aqui iba camiseta.png -->
+                    <td><img class="" width="80" src="<?= base_url ?>assets/img/logosmashito.png" /></td>
                 <?php endif; ?>
         <!--        <td><img src="<?= base_url ?>uploads/images/<?= $producto->imagen ?>" alt="" width="80"</td>-->
                 <td> <a href="<?= base_url ?>Productos/ver&id=<?= $producto->id ?>"> <?= $producto->nombre ?></a></td>
@@ -44,5 +44,5 @@
         </div>
     </div>
 <?php else: ?>
-    <p>No tienes productos en el carrito</p>
+    <p>No tienes productos en tu carrito de compras</p>
 <?php endif; ?>

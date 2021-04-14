@@ -9,10 +9,11 @@ class Utils {
     public static function ShowError($error) {
         $sError = '';
         if (isset($_SESSION['errores'][$error])) {
-            $sError = '<p class=" my-2 btn-danger p-2 rounded">' . $error . ' incorrecta </p>';
+            $sError = '<p class=" my-2 btn-danger p-2 rounded">Formato de ' . $error . ' incorrecto </p>';
         }
-        if($error == 'contraseña'){
-            echo '<script>alert("La contraseña debe tener lo siguiente: 8 caracteres minimo. Entre ellos debe haber 1 mayuscula, 1 numero, 1 caracter especial.")</script>';
+        if(isset($_SESSION['errores'][$error]) && $error == 'contraseña'){
+            //echo '<script>alert("La contraseña debe tener lo siguiente: 8 caracteres minimo. Entre ellos debe haber 1 mayuscula, 1 numero, 1 caracter especial.")</script>';
+            $sError = '<p class=" my-2 btn-danger p-2 rounded">Formato de ' . $error . ' incorrecto. Requisitos: 8 caracteres minimo. 1 mayuscula, 1 numero y 1 caracter especial. </p>';
         }
         if($error == 'error_login'){
             echo '<script>alert("Usuario o Contraseña Incorrecta")</script>';

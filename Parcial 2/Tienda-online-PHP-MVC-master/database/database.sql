@@ -1,3 +1,6 @@
+/*Esta primera version no funciona, el formato sufrio algunos cambios despues de la creacion de la misma*/
+
+/*Se quedo aqui con fines de retrospectiva, usar el que tiene dump como nombre*/
 CREATE DATABASE tienda;
 USE tienda;
 CREATE TABLE usuarios(
@@ -12,7 +15,7 @@ CONSTRAINT pk_usuarios PRIMARY KEY(id),
 CONSTRAINT uq_email UNIQUE(email);
 )ENGINE=innoDB;
 
-INSERT INTO usuarios VALUES(NULL, 'ADMIN', 'ADMIN', 'ADMIN@ADMIN.COM', 'ADMIN', 'ADMIN', NULL );
+INSERT INTO usuarios VALUES(NULL, 'ADMIN', 'ADMIN', 'ADMIN@ADMIN.COM', 'ADMIN', 'ADMIN', NULL ); /*Este usuario no funcionara porque aun no ha sido cifrada su contraseña*/
 
 CREATE TABLE categorias(
 id      int(255) auto_increment not null,

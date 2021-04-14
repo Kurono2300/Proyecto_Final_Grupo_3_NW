@@ -16,7 +16,7 @@
                         <input class="form-check-input" type="checkbox"> Recuerdame
                     </label>
                 </div>
-                <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                <button type="submit" class="btn btn-primary w-100">Iniciar Sesion</button>
                 <a href="<?= base_url ?>usuarios/registrar" class="btn btn-warning text-dark mt-1 mb-3 w-100">Registrarse</a>
             </form>
         <?php else : ?>
@@ -34,9 +34,9 @@
             
             <?php if (isset($_SESSION['admin'])): ?>
             <h3>Opciones de Gestion</h3>
-                <a href="<?= base_url ?>categorias/index" class="btn btn-outline-success text-dark w-100 mt-1">Gestionar categorias</a>
-                <a href="<?= base_url ?>productos/gestionar" class="btn btn-outline-success text-dark w-100 my-1">Gestionar productos</a>
-                <a href="<?=base_url?>Pedidos/gestionar_pedidos" class="btn btn-outline-success text-dark w-100 my-1">Gestionar pedidos</a>
+                <a href="<?= base_url ?>categorias/index" class="btn btn-outline-success text-dark w-100 mt-1">Gestionar Categorias</a>
+                <a href="<?= base_url ?>productos/gestionar" class="btn btn-outline-success text-dark w-100 my-1">Gestionar Productos</a>
+                <a href="<?=base_url?>Pedidos/gestionar_pedidos" class="btn btn-outline-success text-dark w-100 my-1">Gestionar Pedidos</a>
             <?php endif; ?>
             <?php if (isset($_SESSION['identity'])): ?>
                 <h3>Mis opciones</h3>

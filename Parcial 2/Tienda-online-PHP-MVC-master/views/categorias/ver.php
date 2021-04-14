@@ -1,7 +1,7 @@
 <?php if (isset($cate)): ?>
     <h3 class="w-100 my-5"><?= $cate->nombre ?></h3>
     <?php if ($productos->num_rows == 0): ?>
-        <p>No existen productos en esta categoria</p>
+        <p>Actualmente no existen productos en esta categoria</p>
     <?Php else: ?>
         <?php while ($produc = $productos->fetch_object()): ?>
         <a href="<?= base_url ?>Productos/ver&id=<?= $produc->id ?>" class="decoration">
@@ -9,7 +9,7 @@
                     <?php if ($produc->imagen != NULL): ?>
                         <img class="" height="150" src="<?= base_url ?>uploads/images/<?= $produc->imagen ?>" class="card-img-top w-50 p-3 mx-auto" alt="">
                     <?php else: ?>
-                        <img class="" height="150" src="<?= base_url ?>assets/img/camiseta.png" />
+                        <img class="" height="150" src="<?= base_url ?>assets/img/logosmashito.png" />
                     <?php endif; ?>
                     <div class="card-body">
                         <h5 class="card-title"><?= $produc->nombre ?></h5>
@@ -24,5 +24,5 @@
         <?php endwhile; ?>
     <?php endif; ?>
 <?php else: ?>
-    <h3>Categoria no existe</h3>
+    <h3>La categoria a la que desea acceder no existe</h3>
 <?php endif; ?>
