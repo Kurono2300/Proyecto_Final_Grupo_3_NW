@@ -8,7 +8,7 @@ En el archivo de parameters.php es necsario modificar la base_url a la ubicacion
 Y en el archivo de db.php se debe modificar la cadena de conexion.
 
   
-Grupo #3
+Intengrantes Grupo #3
 
 1. Emilio Escoto Funez - 0501-1999-07081
 2. Dennis Eduardo Colindres Figueroa - 0101-1998-04418
